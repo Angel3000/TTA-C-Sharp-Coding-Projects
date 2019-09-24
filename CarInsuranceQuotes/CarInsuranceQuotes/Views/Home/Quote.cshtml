@@ -1,0 +1,84 @@
+﻿<div>
+
+    <div class="card mx-auto shadow">
+
+        <div class="card-header text-center">
+            <h3 class="alert-success text-center">You are close to get the best insurance!!</h3>
+        </div>
+        <br />
+
+        <div class="card-body">
+
+            @using (Html.BeginForm("QuoteCal", "Final", FormMethod.Post))
+            {
+
+            <div class="form-inline">
+                <div class="input-group">
+                    <span class="input-group-addon">First Name</span>
+                    <input name="FirstName" type="text" required class="form-control mb-2 mr-sm-2" placeholder="First Name*" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Last Name</span>
+                    <input name="LastName" type="text" required class="form-control mb-2 mr-sm-2" placeholder="Last Name*" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Birthday</span>
+                    <input name="DateBirth" type="date" required class="form-control mb-2 mr-sm-2" placeholder="Birth Date*" />
+                </div>
+                <br /><br />
+
+                <div class="input-group">
+                    <span class="input-group-addon">Car Year</span>
+                    <input name="CarYear" min="1950" max="@DateTime.Now.Year" type="number" required class="form-control mb-2 mr-sm-2" placeholder="CarYear*" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Make</span>
+                    <input name="CarMake" type="text" required class="form-control mb-2 mr-sm-2" placeholder="CarMake*" />
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Model</span>
+                    <input name="CarModel" type="text" required class="form-control mb-2 mr-sm-2" placeholder="CarModel*" />
+                </div>
+
+                <br /><br />
+
+                <label for="diu1">Did you ever had a DUI?</label>
+                <select required name="Diu" class="form-control" id="diu1">
+                    <option selected value="">Select...</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+
+                <br /><br />
+
+                <label for="speed1">How many speeding tickets do you have?</label>
+                <input name="SpeedTickets" type="number" required width="30" min="0" class="form-control" placeholder="*" />
+
+                <br /><br />
+                <label for="full">Please select what kind of coverage you prefer:</label>
+                <select required name="Cover" class="form-control" id="full">
+                    <option selected value="">Select coverage...</option>
+                    <option value="1">Full coverage</option>
+                    <option value="2">Just liability</option>
+                </select>
+                
+                <br /><br />
+
+                <label for="em1">Get your quote by email:</label>
+                <input name="EmailAddress" id="em1" type="email" required class="form-control mb-2 mr-sm-2" placeholder="e-mail*" />
+
+                <br /><br />
+                <div class="col-xs-2 center-block text-center">
+
+                    <button type="submit" class="btn btn-2 btn-block btn-primary">Submit</button>
+
+                </div>
+
+                <br /><br />
+            </div>
+             }
+        </div>
+
+    </div>
+
+</div>

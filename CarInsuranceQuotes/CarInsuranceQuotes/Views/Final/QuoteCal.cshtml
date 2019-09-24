@@ -1,0 +1,73 @@
+﻿@using CarInsuranceQuotes.ViewModels;
+@model QuotePar
+
+<div class="row no-gutters m-3">
+
+    <div class="card col-sm-20 col-md-10 col-lg-6 mx-auto shadow">
+
+        <div class="card-header text-center">
+            <h3 class="m-0">This is your Quote!</h3>
+        </div>
+
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col col-2">
+
+                    First Name: @Model.firstName
+                </div>
+                <div class="col col-2">
+                    Last Name: @Model.lastName
+                </div>
+                <div class="col col-2">
+                    Birtday: @Model.dateBirth.Date.ToString("MM/dd/yyyy") 
+                </div>
+                <div class="col col-2">
+                    Car Make: @Model.carMake
+                </div>
+                <div class="col col-2">
+                    Car Model: @Model.carModel
+                </div>
+                <div class="col col-2">
+                    Car Year: @Model.carYear
+                </div>
+                <div class="col col-2">
+                    @{
+                        string Sdiu;
+                        if (Model.diu == "Y")
+                        {
+                            Sdiu = "Yes";
+                        }
+                        else
+                        {
+                            Sdiu = "No";
+                        }
+                    }
+                    D.U.I.: @Sdiu
+                </div>
+                <div class="col col-2">
+                    Speed Tickets: @Model.speedTickets
+                </div>
+                <div class="col col-2">
+                    @{
+                        string Scover;
+                        if (Model.cover == "1")
+                        {
+                            Scover = "Full Coverage";
+                        }
+                        else
+                        {
+                            Scover = "Liability Coverage";
+                        }
+                    }
+                    Cover Type: @Scover
+                </div>
+                <div class="col col-2">
+                    Email: @Model.emailAddress
+                </div>
+                <div class="col col-2">
+                    <b>Monthly Quote: $@String.Format("{0:F2}", Model.totalQuote)</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
