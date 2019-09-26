@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SQL-REPORT", "SQL-REPORT\SQL-REPORT.rptproj", "{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.Debug|Default.ActiveCfg = Debug
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.Debug|Default.Build.0 = Debug
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.Debug|Default.Deploy.0 = Debug
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.DebugLocal|Default.Build.0 = DebugLocal
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.Release|Default.ActiveCfg = Release
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.Release|Default.Build.0 = Release
+		{C205D9A8-F321-42F9-A231-6C5AB95CAB6D}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85596992-325B-4A55-8052-5E809E1D5A61}
+	EndGlobalSection
+EndGlobal
